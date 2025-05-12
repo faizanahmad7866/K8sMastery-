@@ -1,0 +1,33 @@
+# Kubernetes Learning Curriculum
+
+## Day 1: Kubernetes Architecture (In-depth)
+
+### Internals
+- Overview of the Kubernetes control plane and worker nodes.
+- Key components of Kubernetes:
+  - **API Server**
+  - **etcd**
+  - **Controller Manager**
+  - **Scheduler**
+  - **Kubelet**
+
+### Metrics
+- Introduction to Kubernetes metrics.
+- Key metrics to monitor:
+  - **CPU Usage**
+  - **Memory Usage**
+  - **Pod Lifecycle**
+  - **Node Health**
+- Monitoring tools: **Prometheus**, **Grafana**.
+
+### Security
+- Authentication and Authorization in Kubernetes.
+- Role-Based Access Control (RBAC) configuration.
+- Network Policies for securing pod communication.
+- Best practices for securing Kubernetes clusters.
+
+---
+
+.
+
+
