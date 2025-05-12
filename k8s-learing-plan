@@ -1,0 +1,190 @@
+# Kubernetes Learning Curriculum
+
+## Day 1: Kubernetes Architecture (In-depth)
+
+### Internals
+- Overview of the Kubernetes control plane and worker nodes.
+- Key components of Kubernetes:
+  - **API Server**: The central management entity.
+  - **etcd**: The key-value store for cluster data.
+  - **Controller Manager**: Ensures the desired state of the cluster.
+  - **Scheduler**: Assigns workloads to nodes.
+  - **Kubelet**: Ensures containers are running on the node.
+
+### Metrics
+- Introduction to Kubernetes metrics.
+- Key metrics to monitor:
+  - **CPU Usage**
+  - **Memory Usage**
+  - **Pod Lifecycle**
+  - **Node Health**
+- Tools for monitoring: **Prometheus**, **Grafana**.
+
+### Security
+- Authentication and Authorization in Kubernetes.
+- Role-Based Access Control (RBAC) configuration.
+- Network Policies for securing pod communication.
+- Best practices for securing Kubernetes clusters:
+  - Pod Security Policies
+  - Image scanning
+  - Runtime security
+  
+## Day 2: Core Concepts
+
+### A to Z of Pods
+- Understanding the fundamental unit of Kubernetes.
+- Pod lifecycle and states.
+- Pod configuration and specifications.
+
+### Pod Types
+- Single-container Pods vs. Multi-container Pods.
+- Init Containers and Sidecar Containers.
+
+### Containers & Their Types
+- Overview of Docker containers and Kubernetes integration.
+- Container runtime options: containerd, CRI-O, Docker.
+  
+## Day 3: Deployment
+
+### Deployment Strategies
+- Rolling updates
+- Blue/Green deployments
+- Canary deployments
+
+### Services
+- Types of services: ClusterIP, NodePort, LoadBalancer, ExternalName.
+- Service discovery in Kubernetes.
+
+### Sample Applications
+- Deploying sample applications to Kubernetes.
+- Practical examples with YAML files.
+
+### Probes (Liveness/Readiness)
+- Understanding liveness and readiness probes.
+- Setting up health checks for containers.
+
+### Secrets
+- Managing sensitive data in Kubernetes.
+- Kubernetes Secrets and environment variables.
+
+### Lifecycle Management
+- Managing pod lifecycle through annotations, labels, and stateful sets.
+
+## Day 4: Access & Configuration
+
+### Namespaces (NS)
+- Organizing workloads into namespaces.
+- Namespaces for multi-tenancy.
+
+### Multi-tenancy
+- Resource quotas and limitations per namespace.
+- Isolation between tenants in a Kubernetes environment.
+
+### RBAC (Role-Based Access Control)
+- Defining roles and permissions for Kubernetes users and services.
+
+### kubeconfig
+- Configuring Kubernetes access using the `kubeconfig` file.
+- Contexts, clusters, and user management.
+
+### Persistent Volumes (PV)
+- Persistent storage for containers.
+- Configuring PV and PVC.
+
+### Dynamic Provisioning
+- Automatically provisioning storage using StorageClasses.
+
+## Day 5: Networking
+
+### Ingress
+- Understanding ingress controllers and resources.
+- Exposing services outside the cluster.
+
+### Ingress Controllers
+- Configuring Ingress controllers (e.g., Nginx, Traefik).
+
+### TLS Certificates
+- Using TLS certificates with Ingress for secure communication.
+
+## Day 6: Optimization
+
+### Pod Placement
+- Controlling where pods run on the cluster (Node Affinity, Taints, Tolerations).
+
+### Workload Optimization
+- Horizontal Pod Autoscaling (HPA)
+- Vertical Pod Autoscaling (VPA)
+- Node Affinity for better resource utilization.
+
+## Day 7: Service Mesh & Observability
+
+### Service Mesh
+- Overview of service meshes like Istio and Linkerd.
+- Securing and monitoring microservices with a service mesh.
+
+### eBPF (Extended Berkeley Packet Filter)
+- Introduction to eBPF for network performance and security.
+
+## Day 8: Observability (O11y)
+
+### Tracing
+- Distributed tracing in Kubernetes environments.
+- Tools like Jaeger and OpenTelemetry.
+
+### Monitoring
+- Setting up Prometheus and Grafana for cluster monitoring.
+
+### Profiling
+- Performance profiling in Kubernetes.
+- Identifying bottlenecks using Kubernetes metrics.
+
+### Logging
+- Centralized logging solutions: Fluentd, Elasticsearch, and Kibana.
+
+### Key Metrics
+- Defining and tracking important Kubernetes metrics.
+
+## Day 9: Upgrades & Performance
+
+### Cluster Upgrade/Downgrade
+- Strategies for upgrading and downgrading Kubernetes clusters.
+- Ensuring high availability during upgrades.
+
+### Benchmarking
+- Performance testing and benchmarking Kubernetes clusters.
+
+## Day 10: Security
+
+### Runtime Security
+- Security monitoring and detection in Kubernetes.
+- Tools like Falco for runtime security.
+
+### Network Policies
+- Configuring network security policies between pods.
+
+### Troubleshooting
+- Debugging Kubernetes clusters.
+- Common issues and their resolutions.
+
+## Day 11: Storage & Deployment
+
+### DoK (Data on Kubernetes)
+- Managing stateful applications on Kubernetes.
+- Storage options for Kubernetes: NFS, GlusterFS, Ceph, and cloud-native solutions.
+
+### Application Deployment
+- Deploying applications to Kubernetes with Helm and manifests.
+
+### Cost Optimization
+- Reducing cloud resource usage for Kubernetes workloads.
+
+## Day 12: Super Advanced
+
+### CRDs (Custom Resource Definitions)
+- Extending Kubernetes functionality with CRDs.
+- Writing and managing custom controllers.
+
+### Aggregated Layers
+- Advanced topics on extending Kubernetes with custom APIs and controllers.
+
+
