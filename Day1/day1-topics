@@ -2,32 +2,19 @@
 
 ## Day 1: Kubernetes Architecture (In-depth)
 
-### Internals
-- Overview of the Kubernetes control plane and worker nodes.
-- Key components of Kubernetes:
-  - **API Server**
-  - **etcd**
-  - **Controller Manager**
-  - **Scheduler**
-  - **Kubelet**
+# 🧠 Kubernetes Architecture Deep Dive
 
-### Metrics
-- Introduction to Kubernetes metrics.
-- Key metrics to monitor:
-  - **CPU Usage**
-  - **Memory Usage**
-  - **Pod Lifecycle**
-  - **Node Health**
-- Monitoring tools: **Prometheus**, **Grafana**.
+Welcome to the **Kubernetes First Day Lecture** repo!  
+This repository contains a well-structured and professionally formatted summary of core Kubernetes components and architecture — perfect for beginners and DevOps learners.
 
-### Security
-- Authentication and Authorization in Kubernetes.
-- Role-Based Access Control (RBAC) configuration.
-- Network Policies for securing pod communication.
-- Best practices for securing Kubernetes clusters.
+### 📚 Topics Covered
 
----
+- Kube-API Server: Authentication, Authorization, Admission Control
+- ETCD: Core key-value store of Kubernetes
+- Controllers: Node, Namespace, CronJob & Custom
+- Scheduler: Queue, Filtering, Scoring & Binding
+- Kubelet, Kube Proxy, and Container Interfaces (CRI, CSI, CNI)
+- Real-world Example of Admission Controller with Resource Budgeting
+- Internal Communication: protobuf, WAL, Raft
 
-.
-
-
+> Dive into `lecture-notes.md` to explore more!

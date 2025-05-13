@@ -10,6 +10,7 @@
   - **Controller Manager**: Ensures the desired state of the cluster.
   - **Scheduler**: Assigns workloads to nodes.
   - **Kubelet**: Ensures containers are running on the node.
+  
 
 ### Metrics
 - Introduction to Kubernetes metrics.
