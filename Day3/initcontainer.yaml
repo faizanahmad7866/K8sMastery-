@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: simple-init-pod
+spec:
+  initContainers:
+    - name: init-logger
+      image: alpine
+      command: ["sh", "-c", "echo Init container started && sleep 40"]
+  containers:
+    - name: main-app
+      image: nginx:alpine 
+      ports:
+        - containerPort: 80
+

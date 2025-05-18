@@ -1,0 +1,18 @@
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: allow-only-kata-runtime
+spec:
+  validationFailureAction: enforce
+  rules:
+    - name: require-kata-runtime
+      match:
+        resources:
+          kinds:
+            - Pod
+      validate:
+        message: "Only pods using the kata-runtime are allowed."
+        pattern:
+          spec:
+            runtimeClassName: "kata"
+

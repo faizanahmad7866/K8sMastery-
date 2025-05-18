@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app-with-sidecar
+spec:
+  restartPolicy: Always
+  containers:
+    - name: main-app
+      image: nginx:latest
+    - name: sidecar
+      image: prom/prometheus:latest
+      args:
+        - --config.file=/etc/prometheus/prometheus.yml
