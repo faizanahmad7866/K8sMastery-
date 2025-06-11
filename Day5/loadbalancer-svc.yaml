@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: lb-service 
+spec:
+  type: LoadBalancer 
+  selector:
+    app: myapp # according deployment label 
+  ports:
+    - port: 80               # Exposed on ELB
+      targetPort: 8080       # App listens on this inside container
+
+
+       
+  # Important Points:
+ 
+  # If you don't specify targetPort, it defaults to the same value as port.
+
+  # When you create a Service, EndpointSlices are created automatically.
+
